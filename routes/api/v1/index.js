@@ -11,8 +11,8 @@ router.get('/users', (req, res) => {
 });
 
 router.get('/users/:id',  (req, res) => {
-    const id = req.params.id;
-    return res.send(`Hello World! Name is ${users[id].name}. Nice to meet you!`);
+    const userId = req.params.id;
+    return res.send(`Hello World! Name is ${users[userId].name}. Nice to meet you!`);
 });
 
 router.post('/users', (req, res) => {
