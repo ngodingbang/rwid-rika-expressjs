@@ -14,8 +14,3 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
-
-router.get('/users/:id',  (req, res) => {
-    const id = req.params.id;
-    res.send(`Hello World! Name is ${users.name}. Nice to meet you!`);
-});

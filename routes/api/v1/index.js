@@ -7,7 +7,7 @@ const users = [
 
 // Define routes
 router.get('/users', (req, res) => {
-  res.send('List of users');
+  res.send(users);
 });
 
 router.get('/users/:id',  (req, res) => {
